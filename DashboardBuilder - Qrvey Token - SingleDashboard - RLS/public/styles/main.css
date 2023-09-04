@@ -1,0 +1,128 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #F4F6F8;
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+#main-app{
+    height: 100%;
+}
+
+.login{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #c3c5c7;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #F4F6F8;
+}
+
+.login.noshadow{
+    box-shadow: none;
+}
+
+.login .close{
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.login fieldset{
+    border: none;
+}
+
+.login fieldset label{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.login fieldset input, .login fieldset select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 4px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.login fieldset.center{
+    text-align: center;
+}
+
+.login fieldset button{
+    width: 100%;
+    height: 30px;
+    background-color: #4b7ea2;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.login fieldset button:hover{
+    opacity: 0.7;
+}
+
+.top-header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px #999;
+    background-color: #EEE;
+}
+
+.user-info{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.user-info #logout-bto{
+    color: #717171;
+}
+
+.user-info #logout-bto:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.top-header #dashboards-selection{
+    height: 30px;
+    width: 200px;
+    outline: none;
+}
+
+.widget-container{
+    height: calc(100% - 70px);
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.loading-widget{
+    text-align: center;
+    display: block;
+    padding: 100px 0px;
+    font-weight: bold;
+    color: #999;
+}
